@@ -1,1 +1,16 @@
 
+fig folder contains the example script to make the 4 main figures in the paper.
+function folder contains the called functions in the figure script.
+
+% f1_ab.m and f1_cd.m contains a demo script showing how to visualize the biomass/disturbance 
+   map and fit the recovery curve in a 1°x1° grid and calculate the recovery time
+   
+% f2_ac.m and f2_dg.m contains a script to compare with site data and visualize the spatial distribution of the 
+   asymptotic AGB (AGBmax) and the recovery time. 
+
+% f3_sample.m contains a demo of how to visualize the annual c change for one region. 
+
+% f4.m describes how to use demo_f4 data to calculate the c change and legacy c changes 
+   for different components in fig. 4
+
+All the acquired preprocessed data can be loaded from the datafolder.
