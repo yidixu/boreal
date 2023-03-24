@@ -1,1 +1,8 @@
 
+% demo_fig1ab.m and demo_fig1cd.m contains a demo data used for making fig1. 
+     Here we shows an exmaple of how we construct the recovery curve in a 1°x1° grid.
+% demo_fig2ac.m and demo_fig2ef.m contains a data required for making fig2.
+
+% demo_fig3.m contains all the source data for making fig.3. 
+
+% demo_fig4.m contains all the budget components for making fig.4
