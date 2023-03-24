@@ -8,5 +8,5 @@ In this projects, most of the image preprocessing, data analysis and visualizati
 
 This repository contains the source data and the scripts to produce the main figures.
 
-The demo data used to produce the main figures were saved in data_folder.
-The code packages contain the scripts (codepath/fig) and the required functions (codepath/function) to make the figures/do the data preprocessing.
+The demo data used to produce the main figures are saved in data_folder.
+The codepath folder contain the scripts (codepath/fig) and the required functions (codepath/function) to do the data preprocessing/plot the figures.
