@@ -4,13 +4,14 @@ addpath('D:\OneDrive\Code\000-obelix\AGBrecovery\codeshare\m_map')
 addpath('D:\OneDrive\Code\000-obelix\AGBrecovery\codeshare\github_repo')
 addpath('D:\OneDrive\Code\000-obelix\AGBrecovery\codeshare\function')
 %% load demo data
-load('D:\OneDrive\Document\22-agbrecovery\4-figure\Boreal\SIFigure\datafolder\demo_f2df_sp.mat');
+load('D:\OneDrive\Code\27-Tropicaldist\5-bfrevision\codeshare\share_250731\datafolder\demo_f2df_sp.mat')
 %% plot
-World=shaperead('D:\OneDrive\Document\22-agbrecovery\1-data\worldmap\Global administrative boundaries\Joint Research Centre\ASAP national units-2\gaul0_asap.shp');
+World=shaperead('D:\Seafile\1-arcgis\worldmap\Global administrative boundaries\Joint Research Centre\ASAP national units-2\gaul0_asap.shp');
 wx = [World(:).X];wy = [World(:).Y];%
 % lat lon of variables
-lat_var=repmat((89.5:-1:-89.5)',[1 360]);
-lon_var=repmat(-179.5:179.5,[180 1]);
+reso=0.5;
+lat_var=repmat((90-reso/2:-reso:-90+reso/2)',[1 360/reso]);
+lon_var=repmat(-180+reso/2:reso:180-reso/2,[180/reso 1]);
 %% plot AGBmax (med (q25-q75)) and recovery time to 90% AGBmax  
 cmap2 = brewermap(256,'Spectral'); 
 data1=agbeqf;
